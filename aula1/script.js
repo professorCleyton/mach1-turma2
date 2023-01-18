@@ -8,11 +8,11 @@
 
 {
   // SUPERMERCADO
-  let cocaCola = 2.5
+  let cocaCola = 2.5;
   console.log('Supermercado', cocaCola)
   {
     // LANCHONETE DO SUPERMERCADO
-    let cocaCola = 5.5
+    let cocaCola = 5.5;
     console.log('Lanchonete', cocaCola)
   }
 }
