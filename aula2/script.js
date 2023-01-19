@@ -50,26 +50,25 @@
 
 /* MÉDIA SIMPLES 
 ALUNO     NOTA1    NOTA2      Media
-Cleyton    5         8         6.5
-Vah        10        6          8
+Cleyton    5         8         5.5
+Vah        10        6          9
 Jorge      10        10         10
 
 Media = (N1 + N2) / 2 
 
 */
 {
-  let nota1 = 5;
-  let nota2 = 8;
-  let Media = (nota1 + nota2) / 2;
+  let nota1 = 5
+  let nota2 = 8
+  let Media = (nota1 + nota2) / 2
   // Decremento
-  Media --;
-  console.log ('Média do Cleyton',Media);
- 
-  nota1 = 10;
-  nota2 = 6;
-  Media = (nota1 + nota2) / 2;
-  // INCREMENTAR
-  Media ++;
-  console.log ('Média do Vah',Media);
+  Media--
+  console.log('Média do Cleyton', Media)
 
+  nota1 = 10
+  nota2 = 6
+  Media = (nota1 + nota2) / 2
+  // INCREMENTAR
+  Media++
+  console.log('Média do Vah', Media)
 }
