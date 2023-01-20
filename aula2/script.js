@@ -1,11 +1,11 @@
 {
-  // Inicializando variaveis e garantindo que sejam numéricas
-  /* SOMANDO EM JS  + */
+  // Inicializando variáveis e garantindo que sejam numéricas
+  /* SOMANDO EM JS + */
   let primeiroNumero = 10
   let segundoNumero = 10
   let Soma = 0
 
-  /* Acrescentando um valor ao valor existe da variavel */
+  /* Acrescentando um valor ao valor existe da variável */
   // primeiroNumero = primeiroNumero + 10; //20
   // segundoNumero = segundoNumero + 5; // 15
 
@@ -49,13 +49,12 @@
 }
 
 /* MÉDIA SIMPLES 
-ALUNO     NOTA1    NOTA2      Media
+ALUNO     NOTA1    NOTA2      Média
 Cleyton    5         8         5.5
 Vah        10        6          9
 Jorge      10        10         10
 
-Media = (N1 + N2) / 2 
-
+Média = (N1 + N2) / 2 
 */
 {
   let nota1 = 5
