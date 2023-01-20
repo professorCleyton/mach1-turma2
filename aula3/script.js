@@ -1,5 +1,5 @@
 {
-  // concatenando básico - juntando os textos
+  // Concatenando básico - juntando os textos
   let titulo = 'Aula de JS'
   let descricao = 'Aula de JS falando sobre textos.'
 
@@ -9,7 +9,7 @@
 }
 
 {
-  // concatenando básico - juntando os textos
+  // Concatenando básico - juntando os textos
   let texto = 'Aula de JS'
   // Jeito 2 de concatenar usando +
   texto = texto + ' ' + 'Aula de JS falando sobre textos.'
@@ -31,11 +31,11 @@
   // CONCATENANDO TEXTO COM OUTROS TIPOS DE DADOS
   /*
   Média simples
-  ALUNO     NOTA1    NOTA2     NOTA3    Media
+  ALUNO     NOTA1    NOTA2     NOTA3    Média
   Cleyton    5         8        10  
 
   Notação matemática
-  Media = (N1 + N2 + N3) / 3
+  Média = (N1 + N2 + N3) / 3
 
   */
   // Recebendo as notas
@@ -57,12 +57,12 @@
   // DESCOBRINDO O TAMANHO DE UM TEXTO
   let tipoNavegador = 'Mozilla'
   console.log('tamanho da string', tipoNavegador.length)
-  // pegando pedaço do texto
+  // Pegando pedaço do texto
   console.log(tipoNavegador.slice(0, 3))
   // FICOB2530 - Ex: Código de cliente composto
-  // TRANSFORMAR MEU TEXTO EM MAÍUSCULO
+  // TRANSFORMAR MEU TEXTO EM MAIÚSCULO
   console.log(tipoNavegador.toUpperCase())
-  // TRANSFORMAR MEU TEXTO TODO EM MÍNUSCULO
+  // transformar meu texto todo um minúsculo
   console.log(tipoNavegador.toLowerCase())
   // SUBSTITUINDO PEDAÇO DO TEXTO
   console.log(tipoNavegador.replace('Moz', 'Van'))
