@@ -17,11 +17,11 @@
   }
 }
 
-// Terceiro comando de saida e entrada
+// Terceiro comando de saída e entrada
 let textoDigitado = prompt('Digite alguma coisa usuario:')
 console.log(textoDigitado)
 
-// SOMAR DOIS NUMEROS INTEIROS 
+// SOMAR DOIS NÚMEROS INTEIROS 
 /* 
     SOMA = N1 + N2
     1 - ADQUIRIR AS ENTRADAS 
