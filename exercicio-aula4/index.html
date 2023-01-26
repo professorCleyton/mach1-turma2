@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 4 JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Exercício aula 4 - Prática</h1>
+    <script>
+      let letraAlfabeto = prompt('Digite aqui uma letra do alfabeto:')
+      letraAlfabeto = letraAlfabeto.toLowerCase()
+      console.log('Valor digitado', letraAlfabeto)
+      if (isNaN(letraAlfabeto) && letraAlfabeto.length === 1) {
+        if (
+          letraAlfabeto == 'a' ||
+          letraAlfabeto == 'e' ||
+          letraAlfabeto == 'i' ||
+          letraAlfabeto == 'o' ||
+          letraAlfabeto == 'u'
+        ) {
+          alert('Usuário digitou uma vogal')
+        } else {
+          alert('Usuário digitou uma consoante')
+        }
+      } else {
+        alert('Digite uma letra do alfabeto para obter o resultado')
+      }
+    </script>
+  </body>
+</html>
