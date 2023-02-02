@@ -1,17 +1,49 @@
-{
-  let alunos = ['Charle','Fernando','Lucas','Danilo'] // Array do tipo vetor
-  console.log(alunos[0])
-  console.log(alunos[1])
-  console.log(alunos[2])
-  let notas = [[9,8,10],[5,4,10],[10,9,8]] // Array do tipo Matriz 
-  console.log(notas)
-  console.log('Primeira nota da primeira linha',notas[0][0])
-  console.log('Ultima linha e ultima coluna',notas[2][2])
-  // Adicionando uma linha na matriz
-  notas.push([10,10,10])
-  console.log(notas)
+/* ARRAY - Uma estrutura semelhante a uma lista de dados
+com posições definidas, que podemos percorrer utilizando 
+estruturas de repetição.
 
-  /* 3x3 
-    matriz [3][3]
-  */ 
+Ele pode armazenar tipos de dados como string, 
+números e objetos.
+
+*/
+
+{
+  /* ARRAY ARMAZENANDO STRING */
+  listaNomes = ['Cleyton', 'Dimas', 'Cauê']
+  // Atribuindo uma posicao do array a uma variavel normal
+  let cleyton = listaNomes[0] 
+  console.log(cleyton)
+  console.log(listaNomes)
+
+  listaNumeros = [1, 2, 3, 4, 5, 6, 7]
+  console.log(listaNumeros)
+  /* Não muito recomendável */
+  listaMistaDasGalaxias = [1, 'Cleyton', '', 4]
+  console.log(listaMistaDasGalaxias)
+}
+
+{
+  let frutas = []
+  console.log('Lista de frutas: ',frutas);
+
+  // Adicionando no final do array
+  frutas.push('Banana')
+  console.log('Lista de frutas: ',frutas);
+
+  frutas.push('Maçã')
+  console.log('Lista de frutas: ',frutas);
+
+  // Adiciona valor no inicio do array
+  frutas.unshift('Laranja')
+  console.log('Lista de frutas: ',frutas);
+  // Removendo um item no final do array
+  frutas.pop()
+  console.log('Lista de frutas: ',frutas);
+
+  // Remover um item do inicio do array
+  frutas.shift()
+  console.log('Lista de frutas: ',frutas);
+
+
+
 }
