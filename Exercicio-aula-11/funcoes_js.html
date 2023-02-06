@@ -31,6 +31,22 @@
         return formataCPF
       }
 
+       // Função para formatar o CPF 000.000.000-00 - String ou texto - Outra forma
+       function formatarCPFOutraForma(cpfRecebido){
+        let formataCPF = cpfRecebido.slice(0,3)  // pegando os 3 primeiros numeros
+        formataCPF += '.' + cpfRecebido.slice(3,6) // pegando os próximos 3 números
+        formataCPF += '.' + cpfRecebido.slice(6,9) // Pegando os próximos 3 números
+        formataCPF += '-' + cpfRecebido.slice(9,11)
+        return formataCPF
+      }
+
+        // Função para formatar o CPF 000.000.000-00 - String ou texto - Outra forma
+        function formatarCPFOutraForma2(cpfRecebido){
+        let formataCPF = `${cpfRecebido.slice(0,3)}.${cpfRecebido.slice(3,6)}
+        . ${cpfRecebido.slice(6,9)}- ${cpfRecebido.slice(9,11)}` 
+        return formataCPF
+      }
+
       // Função para exibir mensagem cliente - VOID
       function exibeMensagem(cpf){
           if(validaCPF(cpf)){
