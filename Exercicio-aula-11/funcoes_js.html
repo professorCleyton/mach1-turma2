@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolução do exercício</title>
+  </head>
+  <body>
+    <script>
+      // Recebo dado digitado do cliente
+      let cpfCliente = prompt('Digite seu CPF:')
+
+      // Função para validar o CPF digitado
+      function validaCPF(cpf) {
+        // CPF tem 11 digitos? CPF é um número?
+        if (cpf.length == 11 && !isNaN(cpf)) {
+          return true
+        } else {
+          // Se não
+          return false
+        }
+      }
+      
+      // Função para formatar o CPF 000.000.000-00 - String ou texto
+      function formatarCPF(cpfRecebido){
+        let formataCPF = cpfRecebido.slice(0,3)// pegando os 3 primeiros numeros
+        + '.' + cpfRecebido.slice(3,6) // pegando os próximos 3 números
+        + '.' + cpfRecebido.slice(6,9) // Pegando os próximos 3 números
+        + '-' + cpfRecebido.slice(9,11)
+        return formataCPF
+      }
+
+      // Função para exibir mensagem cliente - VOID
+      function exibeMensagem(cpf){
+          if(validaCPF(cpf)){
+            let cpfFormatado = formatarCPF(cpf) // Armazenando o retorno da função formata CPF 
+            alert('CPF informado:' + cpfFormatado)
+          }else{
+            alert('CPF Inválido')
+          }
+      }
+
+      exibeMensagem(cpfCliente)
+
+    </script>
+  </body>
+</html>
