@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 15</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Aula 15</h1>
+        <h2>Definição de Document</h2>
+        <p class="paragrafo-custom">
+          Para cada página carregada no browser, existe um objeto Document. A
+          interface Document serve como um ponto de entrada para o conteúdo da
+          Página ( a árvore DOM, incluindo elementos como <code>body</code> e
+          <code>table</code>) e provê funcionalidades globais ao documento (como
+          obter a URL da página e criar novos elementos no documento).
+        </p>
+      </div>
+      <div id="conteudo-interacao-nodes" style="text-align: justfy">
+        <input
+          type="text"
+          value="Teste"
+          maxlength="50"
+          id="input-texto"
+          name="input-da-massa"
+          placeholder="Texto texte"
+        />
+        <h1 id="titulo-dom">Definição de Node</h1>
+        <p class="paragrafo-custom">
+          Node é uma interface da qual diversos tipos do DOM herdam, e que
+          permite que esses tipos sejam tratados de forma similar, por exemplo,
+          herdando os mesmos métodos ou sendo testados da mesma forma.
+        </p>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
