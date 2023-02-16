@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 17</title>
+    <!-- Include Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- //-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Cadastro de Produtos</h1>
+      </header>
+      <!-- Enunciado do exercício-->
+      <section>
+        <h2>Desafio</h2>
+        <ol>
+          <li>
+            Cadastro de produtos com código, nome , descrição(breve) e preço
+          </li>
+          <li>
+            Botão Salvar deve armazenar o registro em um tipo de objeto JS
+          </li>
+          <li>
+            Botão Concluir Cadastramento deve exibir uma lista com todos os
+            produtos cadastrados, o formulário deve sumir, deve aparecer apenas
+            a lista
+          </li>
+        </ol>
+      </section>
+      <!-- Form Cadastro -->
+      <section id="cadastramento-produtos" class="ativo">
+        <div class="row">
+          <form action="#">
+            <div id="feedback-usuario" class="form-text" hidden></div>
+            <div class="mb-3">
+              <label for="codigo-produto" class="form-label">Código</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="codigo-produto"
+                placeholder="Digite apenas números"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="nome-produto" class="form-label"
+                >Nome do produto</label
+              >
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="nome-produto"
+                placeholder="Digite o nome do produto"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="descricao-produto" class="form-label"
+                >Descrição do produto</label
+              >
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="descricao-produto"
+                placeholder="Digite a descrição do produto"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="preco-produto" class="form-label"
+                >Preço do produto</label
+              >
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="preco-produto"
+                placeholder="Digite o preço do produto"
+              />
+            </div>
+            <button type="button" class="btn btn-primary" id="botao-salvar">
+              Salvar
+            </button>
+            <button type="button" class="btn btn-secondary" id="botao-concluir">
+              Concluir Cadastramento
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Lista de produtos-->
+      <section id="listagem-produtos" class="inativo">
+        <h2>Lista cadastrada</h2>
+        <ul id="lista-produtos"></ul>
+      </section>
+      <footer>
+        Bora dar uma lida na
+        <a
+          href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction"
+        >
+          Documentação Oficial</a
+        >
+        Nesta aula vamos brincar um pouco com a interação entre JS e HTML.
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

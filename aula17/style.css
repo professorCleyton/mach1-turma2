@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:blue;
+}
+
+footer{
+    margin-top: 24px;
+}
+
+#titulo-dom{
+    color:yellow;
+}
+
+.inativo{
+    display: none;
+}
